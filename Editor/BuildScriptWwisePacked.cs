@@ -56,7 +56,7 @@ namespace AK.Wwise.Unity.WwiseAddressables
 			{
 				var include = true;
 				if (group.Name.Contains("WwiseData")){
-					if (!group.Name.Contains(wwisePlatform) && !group.name.Contains("AddressableSoundbanks"))
+					if (!group.Name.Contains(target.ToString()) && !group.name.Contains("AddressableSoundbanks"))
 					{
 						include = false;
 					}
